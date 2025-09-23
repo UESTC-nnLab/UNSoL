@@ -140,9 +140,6 @@ python predict.py
 ## Results
 - For bounding box detection, we use COCO's evaluation metrics:
 
-<h3>Results</h3>
-<p>For bounding box detection, we use COCO metrics.</p>
-
 <table class="results">
   <tr>
     <th rowspan="2">Method</th>
@@ -222,8 +219,6 @@ python predict.py
     <td class="center"><span class="down">↓3.42</span></td>
   </tr>
 </table>
-
-
 
 
 - Pseudo-label evolution and the unsupervised self-optimization learning process on DSISTD.
