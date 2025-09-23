@@ -15,10 +15,10 @@ from utils.utils import cvtColor, get_classes, preprocess_input, resize_image
 from utils.utils_bbox import decode_outputs, non_max_suppression
 
 map_mode            = 0 
-# cocoGt_path         = '/home/public/DSISTD/test.json'
-# dataset_img_path    = '/home/public/DSISTD/'
-cocoGt_path         = '/home/public/IRDST-M/test.json'
-dataset_img_path    = '/home/public/IRDST-M/'
+cocoGt_path         = '/home/public/DSISTD/test.json'
+dataset_img_path    = '/home/public/DSISTD/'
+# cocoGt_path         = '/home/public/IRDST-M/test.json'
+# dataset_img_path    = '/home/public/IRDST-M/'
 temp_save_path      = 'map_out/coco_eval'
 
 class MAP_vid(object):
