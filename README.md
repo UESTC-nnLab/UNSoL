@@ -190,7 +190,7 @@ python predict.py
   <!-- ================= UNSoL on RDIAN ================= -->
   <tr>
     <td><b>UNSoL on RDIAN</b></td>
-    <td class="center"><u>73.84</u></td><td class="center"><b>93.86</b></td><td class="center">79.33</td><td class="center"><u>85.99</u></td>
+    <td class="center"><u>73.84</u></td><td class="center">93.86</td><td class="center">79.33</td><td class="center"><u>85.99</u></td>
     <td class="center">70.31</td><td class="center">86.50</td><td class="center">82.75</td><td class="center">84.58</td>
   </tr>
   <tr>
