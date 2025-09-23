@@ -146,7 +146,6 @@ python predict.py
     <th rowspan="2">Setting</th>
     <th colspan="4">DSISTD</th>
     <th colspan="4">IRDST-M</th>
-    <th rowspan="2">Download</th>
   </tr>
   <tr>
     <th>mAP50 (%)</th><th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
@@ -160,9 +159,6 @@ python predict.py
     <td class="center">ACM</td>
     <td class="center">57.16</td><td class="center">80.65</td><td class="center">71.18</td><td class="center">75.62</td>
     <td class="center">69.08</td><td class="center">77.32</td><td class="center">90.27</td><td class="center">83.30</td>
-    <td rowspan="7" class="center">
-      <a href="https://pan.baidu.com/s/18O7gEwr-QvMxrckCJrRH_Q?pwd=2u4k">Baidu</a> (code: 2u4k)
-    </td>
   </tr>
   <tr>
     <td class="center">Gain (Δ)</td>
@@ -221,9 +217,10 @@ python predict.py
 </table>
 
 
+
 - Pseudo-label evolution and the unsupervised self-optimization learning process on DSISTD.
 
-<img src="/learning.png" width="500px">
+<img src="/learning.png" width="600px">
 
 
 ## Contact
