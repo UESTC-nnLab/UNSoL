@@ -142,9 +142,13 @@ python predict.py
 
 <table class="results">
   <tr>
-    <th>Method</th>
-    <th>mAP50 (%)</th><th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
-    <th>mAP50 (%)</th><th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
+    <th rowspan="2">Method</th>
+    <th colspan="4">DSISTD</th>
+    <th colspan="4">IRDST-M</th>
+  </tr>
+  <tr>
+    <th>mAP<sub>50</sub> (%)</th><th>Pr (%)</th><th>Re (%)</th><th>F1 (%)</th>
+    <th>mAP<sub>50</sub> (%)</th><th>Pr (%)</th><th>Re (%)</th><th>F1 (%)</th>
   </tr>
 
   <!-- ================= UNSoL on ACM ================= -->
