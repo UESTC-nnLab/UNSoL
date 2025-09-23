@@ -223,7 +223,7 @@ python predict.py
 
 - Pseudo-label evolution and the unsupervised self-optimization learning process on DSISTD.
 
-<img src="/learning.png" width="700px">
+<img src="/learning.png" width="600px">
 
 
 ## Contact
