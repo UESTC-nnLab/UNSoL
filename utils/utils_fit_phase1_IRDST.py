@@ -151,7 +151,7 @@ def fit_one_epoch(model_train, model, ema, yolo_loss, loss_history, eval_callbac
         print('-------Candidate labels are collected-------')
         update_pseudo_labels(input_file, candidate_file, epoch+1, specified_epoch=19, iou_threshold=0.1)
         print('-------Labels update completed-------')
-        
+        filter_targets(input_file)
 
 
 def collect_pseudo_labels(image_paths, best_predictions, candidate_file, input_file):
