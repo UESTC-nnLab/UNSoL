@@ -140,24 +140,13 @@ python predict.py
 ## Results
 - For bounding box detection, we use COCO's evaluation metrics:
 
-<!-- Results: DSISTD (left) vs IRDST-M (right) -->
-<style>
-  .up   { color: #2ca02c; font-weight: 600; }   /* green */
-  .down { color: #d62728; font-weight: 600; }   /* red   */
-  table.results { border-collapse: collapse; width: 100%; }
-  table.results th, table.results td { border: 1px solid #ddd; padding: 6px 8px; }
-  table.results th { background:#f6f6f6; }
-  .subhead { background:#fbfbfb; font-weight: 600; text-align:center; }
-  .center { text-align:center; }
-</style>
-
 <h3>Results</h3>
 <p>For bounding box detection, we use COCO metrics.</p>
 
 <table class="results">
   <tr>
     <th rowspan="2">Method</th>
-    <th rowspan="2">Backbone / Setting</th>
+    <th rowspan="2">Setting</th>
     <th colspan="4">DSISTD</th>
     <th colspan="4">IRDST-M</th>
     <th rowspan="2">Download</th>
