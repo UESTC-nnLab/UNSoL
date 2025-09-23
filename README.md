@@ -142,29 +142,21 @@ python predict.py
 
 <table class="results">
   <tr>
-    <th rowspan="2">Method</th>
-    <th rowspan="2">Setting</th>
-    <th colspan="4">DSISTD</th>
-    <th colspan="4">IRDST-M</th>
-  </tr>
-  <tr>
+    <th>Method</th>
     <th>mAP50 (%)</th><th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
     <th>mAP50 (%)</th><th>Precision (%)</th><th>Recall (%)</th><th>F1 (%)</th>
   </tr>
 
   <!-- ================= UNSoL on ACM ================= -->
-  <tr class="subhead"><td colspan="10">UNSoL on ACM</td></tr>
   <tr>
-    <td class="center">UNSoL</td>
-    <td class="center">ACM</td>
+    <td><b>UNSoL on ACM</b></td>
     <td class="center">57.16</td><td class="center">80.65</td><td class="center">71.18</td><td class="center">75.62</td>
     <td class="center">69.08</td><td class="center">77.32</td><td class="center">90.27</td><td class="center">83.30</td>
   </tr>
   <tr>
-    <td class="center">Gain (Δ)</td>
-    <td class="center">vs. baseline</td>
+    <td><b>Gain (Δ)</b></td>
     <td class="center"><span class="down">↓9.69</span></td>
-    <td class="center"><span class="down">↓9.69</span></td>
+    <td class="center"><span class="down">↓7.7</span></td>
     <td class="center"><span class="down">↓5.45</span></td>
     <td class="center"><span class="down">↓6.45</span></td>
     <td class="center"><span class="down">↓3.92</span></td>
@@ -174,16 +166,13 @@ python predict.py
   </tr>
 
   <!-- ================= UNSoL on MSHNet ================= -->
-  <tr class="subhead"><td colspan="10">UNSoL on MSHNet</td></tr>
   <tr>
-    <td class="center">UNSoL</td>
-    <td class="center">MSHNet</td>
+    <td><b>UNSoL on MSHNet</b></td>
     <td class="center">71.22</td><td class="center">91.60</td><td class="center">78.51</td><td class="center">84.55</td>
-    <td class="center">72.92</td><td class="center">80.71</td><td class="center"><b>91.15</b></td><td class="center">85.57</td>
+    <td class="center">72.92</td><td class="center">80.71</td><td class="center"><u>91.15</u></td><td class="center">85.57</td>
   </tr>
   <tr>
-    <td class="center">Gain (Δ)</td>
-    <td class="center">vs. baseline</td>
+    <td><b>Gain (Δ)</b></td>
     <td class="center"><span class="up">↑0.50</span></td>
     <td class="center"><span class="up">↑8.15</span></td>
     <td class="center"><span class="down">↓6.84</span></td>
@@ -195,16 +184,13 @@ python predict.py
   </tr>
 
   <!-- ================= UNSoL on RDIAN ================= -->
-  <tr class="subhead"><td colspan="10">UNSoL on RDIAN</td></tr>
   <tr>
-    <td class="center">UNSoL</td>
-    <td class="center">RDIAN</td>
-    <td class="center"><b>73.84</b></td><td class="center"><b>93.86</b></td><td class="center">79.33</td><td class="center">85.99</td>
+    <td><b>UNSoL on RDIAN</b></td>
+    <td class="center"><u>73.84</u></td><td class="center"><b>93.86</b></td><td class="center">79.33</td><td class="center"><u>85.99</u></td>
     <td class="center">70.31</td><td class="center">86.50</td><td class="center">82.75</td><td class="center">84.58</td>
   </tr>
   <tr>
-    <td class="center">Gain (Δ)</td>
-    <td class="center">vs. baseline</td>
+    <td><b>Gain (Δ)</b></td>
     <td class="center"><span class="up">↑1.86</span></td>
     <td class="center"><span class="up">↑6.61</span></td>
     <td class="center"><span class="down">↓4.23</span></td>
