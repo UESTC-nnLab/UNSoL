@@ -14,7 +14,7 @@ For example:
 train_annotation_path = '/home/DSISTD/train.txt'
 val_annotation_path = '/home/DSISTD/val.txt'
 ```
-- Or you can generate a new `txt file` based on the path of your datasets. `.txt files` (e.g., `train.txt`) can be generated from `.json files` (e.g., `instances_train2017.json`). We also provide all `.json files` for [`DSISTD`](https://pan.baidu.com/s/1-di7v8e1Vmp3PzzRqEGKHg?pwd=r5cg)(code: r5cg) and and [`IRDST-M`](https://pan.baidu.com/s/1jGW76xbt30XuA9A-YfUz-Q?pwd=w6pc)(code: w6pc). 
+- Or you can generate a new `txt file` based on the path of your datasets. `.txt files` (e.g., `train.txt`) can be generated from `.json files` (e.g., `train.json`). We also provide all `.json files` for [`DSISTD`](https://pan.baidu.com/s/1-di7v8e1Vmp3PzzRqEGKHg?pwd=r5cg)(code: r5cg) and and [`IRDST-M`](https://pan.baidu.com/s/1jGW76xbt30XuA9A-YfUz-Q?pwd=w6pc)(code: w6pc). 
 
 ``` python 
 python utils_coco/coco_to_txt.py
