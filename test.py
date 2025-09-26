@@ -109,7 +109,7 @@ def get_history_imgs(line):
     file_type = line.split('.')[-1]
     index = int(line.split('/')[-1][:-4])
      
-    return [os.path.join(dir_path,  "%d.%s" % (max(id, 0),file_type)) for id in range(index - 4, index + 1)] 
+    return [os.path.join(dir_path,  "%d.%s" % (max(id, 0),file_type)) for id in range(index, index + 1)] 
     
     
 
