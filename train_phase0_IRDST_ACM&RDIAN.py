@@ -13,8 +13,11 @@ from nets.training import (ModelEMA, YOLOLoss, get_lr_scheduler,
 from utils.callbacks import EvalCallback, LossHistory
 from utils.dataloader_for_unsup import seqDataset, dataset_collate
 from utils.utils import get_classes, show_config
-from utils.utils_fit_phase1_IRDST import fit_one_epoch
+from utils.utils_fit_phase0_ACM&RDIAN import fit_one_epoch
 import argparse
+from label_generation_IRDST import generation
+
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -30,7 +33,7 @@ if __name__ == "__main__":
     sync_bn         = False
     fp16            = False
     classes_path    = 'model_data/classes.txt'
-    model_path      = '' 
+    model_path      = ''  
     input_shape     = [512, 512]
     phi             = 's'
     mosaic              = False
@@ -40,16 +43,16 @@ if __name__ == "__main__":
     special_aug_ratio   = 0.7
 
     Init_Epoch          = 0
-    UnFreeze_Epoch      = 20  
+    UnFreeze_Epoch      = 20 
     Freeze_Epoch        = 0
     Freeze_batch_size   = 4
     Unfreeze_batch_size = 4
     Freeze_Train        = False
     Init_lr             = 1e-4
-    Min_lr              = 1e-6
+    Min_lr              = 1e-6  
     optimizer_type      = "adam"
     momentum            = 0.937
-    weight_decay        = 0 
+    weight_decay        = 0 #5e-4
     lr_decay_type       = "cos"
 
     save_period         = 1
@@ -76,6 +79,8 @@ if __name__ == "__main__":
         local_rank      = 0
         rank            = 0
 
+   
+    
     seed = 2024
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
@@ -84,6 +89,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.deterministic = True
 
     class_names, num_classes = get_classes(classes_path)
+
     model = Model(num_classes=num_classes, num_frame=1)
     weights_init(model)
 
@@ -120,6 +126,9 @@ if __name__ == "__main__":
 
     ema = ModelEMA(model_train)
 
+    generation() 
+
+    
     with open(train_annotation_path, encoding='utf-8') as f:
         train_lines = f.readlines()
     with open(val_annotation_path, encoding='utf-8') as f:
@@ -176,7 +185,7 @@ if __name__ == "__main__":
                     pg0.append(v.weight)    
             elif hasattr(v, "weight") and isinstance(v.weight, nn.Parameter):
                 pg1.append(v.weight)
-                
+
         optimizer = {
             'adam'  : optim.Adam(pg0, Init_lr_fit, betas = (momentum, 0.999)),
             'sgd'   : optim.SGD(pg0, Init_lr_fit, momentum = momentum, nesterov=True)
