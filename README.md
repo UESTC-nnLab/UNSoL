@@ -1,6 +1,6 @@
 ## ***The end-to-end unsupervised learning framework for moving infrared small target detection***
 
-This project is the implementation of our paper **Unsupervised Self-optimization Learning for Moving Infrared Small Target Detection (under review)**. 
+This project is the implementation of our paper **Unsupervised Self-optimization Learning for Moving Infrared Small Target Detection**. 
 
 
 
